@@ -5,7 +5,7 @@
       "Effect": "Deny",
       "Principal": "*",
       "Action": "s3:*",
-      "Resource": "arn:aws:s3:::my-secure-bucket",
+      "Resource": "arn:aws:s3:::my-s3-bucket",
       "Condition": {
         "Bool": {
           "aws:SecureTransport": "false"
@@ -16,7 +16,7 @@
       "Effect": "Allow",
       "Principal": "*",
       "Action": "s3:*",
-      "Resource": "arn:aws:s3:::my-secure-bucket/*",
+      "Resource": "arn:aws:s3:::my-s3-bucket/*",
       "Condition": {
         "StringEquals": {
           "aws:SourceVpce": "vpce-12345678"
